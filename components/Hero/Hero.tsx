@@ -1,6 +1,4 @@
 import React from 'react'
-import Price from '../Price/Price';
-
 const Hero = (props:any) => {
     const heading=props.heading;
     const message=props.message;
