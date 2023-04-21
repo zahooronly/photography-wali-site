@@ -11,7 +11,6 @@ const Home = () => {
     <div >
       <Head>
         <title>PhotoGraphy</title>
-
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Hero heading="Capture Moments" message="I capture best moments that I like to capture."/>

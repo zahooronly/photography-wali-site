@@ -48,16 +48,16 @@ const Navbar = () => {
         </div>
         <div className={nav?"sm:hidden absolute right-0 left-0 bottom-0 top-0 justify-center flex items-center w-full h-screen text-center bg-black ease-in duration-300":"sm:hidden absolute right-0 left-[-100%] bottom-0 top-0 justify-center flex items-center w-full h-screen text-center bg-black ease-in duration-300"}>
         <ul>
-          <li className="p-4 text-4xl hover:text-gray-500">
+          <li onChange={navHandler} className="p-4 text-4xl hover:text-gray-500">
             <Link href={"/"}>Home</Link>
           </li>
-          <li className="p-4 text-4xl hover:text-gray-500">
+          <li onChange={navHandler} className="p-4 text-4xl ease-in-out hover:text-gray-500">
             <Link href={"/#gallery"}>Gallery</Link>
           </li>
-          <li className="p-4 text-4xl hover:text-gray-500">
+          <li onChange={navHandler} className="p-4 text-4xl hover:text-gray-500">
             <Link href={"/portfolio"}>Work</Link>
           </li>
-          <li className="p-4 text-4xl hover:text-gray-500">
+          <li onChange={navHandler} className="p-4 text-4xl hover:text-gray-500">
             <Link href={"/contact"}>Contact</Link>
           </li>
         </ul>

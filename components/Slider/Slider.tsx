@@ -25,7 +25,14 @@ const Slider = ({slides}:any) => {
                     <div key={index} className={index===current? 'opacity-[1] ease-in duration-1000':'opacity-0'}>
                         <FaArrowCircleLeft onClick={prevSlide} size={50} className='absolute top-[50%] left-[5%] text-white/70 cursor-pointer select-none z-[2]'/>
                         {index===current&&(
-                            <Image src={slide.image} alt='/' width={1440} height={600} style={{ height: '600px'}}  objectFit='cover'/>
+                            <Image
+                                src={slide.image}
+                                alt=''
+                                width={1440}
+                                height={600}
+                                className='h-600 object-cover'
+                                loader={({ src, width, height }:any) => `${src}?w=${width}&h=${height}&fit=crop`}
+                                />
                             )}
                              
                         <FaArrowCircleRight onClick={nextSlide} size={50} className='absolute top-[50%]  right-[5%] text-white/70 cursor-pointer select-none z-[2]'/>
